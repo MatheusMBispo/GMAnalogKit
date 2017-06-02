@@ -6,6 +6,8 @@ AnalogKit is a framework for SpriteKit projects that provides a fixed Analog and
 - Customizable Tracking Area
 - Easy for the user
 
+## Created by Matheus Bispo and Gabriel Rodrigues
+
 ## Touches Configuration
 ### Configure the touches to use the framework
 ```
