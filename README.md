@@ -1,5 +1,36 @@
 # GMAnalogKit
 
+AnalogKit is a framework for SpriteKit projects that provides a fixed Analogic with user defined tracking area.
+
+- Customizable Textures
+- Customizable Tracking Area
+- Easy for the user
+
+## Touches Configuration
+### Configure the touches to use the framework
+```
+class MyScene: SKScene{
+
+  var analogic: GMAnalogControl
+
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.analogic.touchesBegan(touches, with: event)
+  }
+  
+  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.analogic.touchesMoved(touches, with: event)
+  }
+  
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.analogic.touchesEnded(touches, with: event)
+  }
+  
+  override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.analogic.touchesCancelled(touches, with: event)
+  }  
+}
+```
+
 ## Example of a fixed analogic creation:
 
 ```
@@ -78,4 +109,6 @@ class MyScene: SKScene, GMAnalogDelegate {
    }
 }
 ```
+# Warning!
 
+If you don't implement the delegate or don't implement the appropriate touches in your project, the framework will not work properly.
