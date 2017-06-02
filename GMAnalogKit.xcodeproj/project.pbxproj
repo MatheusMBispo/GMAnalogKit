@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56276C021EE1E5CC008562C6 /* GMAnalogControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276BFF1EE1E5CC008562C6 /* GMAnalogControl.swift */; };
+		56276C031EE1E5CC008562C6 /* GMBigStickNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276C001EE1E5CC008562C6 /* GMBigStickNode.swift */; };
+		56276C041EE1E5CC008562C6 /* GMMovableAnalogicControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276C011EE1E5CC008562C6 /* GMMovableAnalogicControl.swift */; };
 		565B0B081EE1E3920033F2A0 /* GMAnalogKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565B0AFE1EE1E3910033F2A0 /* GMAnalogKit.framework */; };
 		565B0B0D1EE1E3920033F2A0 /* GMAnalogKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B0B0C1EE1E3920033F2A0 /* GMAnalogKitTests.swift */; };
 		565B0B0F1EE1E3920033F2A0 /* GMAnalogKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 565B0B011EE1E3910033F2A0 /* GMAnalogKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56276BFF1EE1E5CC008562C6 /* GMAnalogControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMAnalogControl.swift; path = ../../GMAnalogicKit/GMAnalogKit/GMAnalogControl.swift; sourceTree = "<group>"; };
+		56276C001EE1E5CC008562C6 /* GMBigStickNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMBigStickNode.swift; path = ../../GMAnalogicKit/GMAnalogKit/GMBigStickNode.swift; sourceTree = "<group>"; };
+		56276C011EE1E5CC008562C6 /* GMMovableAnalogicControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMMovableAnalogicControl.swift; path = ../../GMAnalogicKit/GMAnalogKit/GMMovableAnalogicControl.swift; sourceTree = "<group>"; };
 		565B0AFE1EE1E3910033F2A0 /* GMAnalogKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GMAnalogKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		565B0B011EE1E3910033F2A0 /* GMAnalogKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMAnalogKit.h; sourceTree = "<group>"; };
 		565B0B021EE1E3910033F2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +77,9 @@
 		565B0B001EE1E3910033F2A0 /* GMAnalogKit */ = {
 			isa = PBXGroup;
 			children = (
+				56276BFF1EE1E5CC008562C6 /* GMAnalogControl.swift */,
+				56276C001EE1E5CC008562C6 /* GMBigStickNode.swift */,
+				56276C011EE1E5CC008562C6 /* GMMovableAnalogicControl.swift */,
 				565B0B011EE1E3910033F2A0 /* GMAnalogKit.h */,
 				565B0B021EE1E3910033F2A0 /* Info.plist */,
 			);
@@ -149,6 +158,7 @@
 					565B0AFD1EE1E3910033F2A0 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = DVMDCJRNKS;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					565B0B061EE1E3920033F2A0 = {
@@ -198,6 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56276C021EE1E5CC008562C6 /* GMAnalogControl.swift in Sources */,
+				56276C041EE1E5CC008562C6 /* GMMovableAnalogicControl.swift in Sources */,
+				56276C031EE1E5CC008562C6 /* GMBigStickNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +337,7 @@
 		565B0B131EE1E3920033F2A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
@@ -336,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bispo.GMAnalogKit.GMAnalogKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +358,7 @@
 		565B0B141EE1E3920033F2A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
@@ -362,6 +378,7 @@
 		565B0B161EE1E3920033F2A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
 				INFOPLIST_FILE = GMAnalogKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +391,7 @@
 		565B0B171EE1E3920033F2A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
 				INFOPLIST_FILE = GMAnalogKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +420,7 @@
 				565B0B141EE1E3920033F2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		565B0B151EE1E3920033F2A0 /* Build configuration list for PBXNativeTarget "GMAnalogKitTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +429,7 @@
 				565B0B171EE1E3920033F2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
