@@ -1,6 +1,6 @@
 # GMAnalogKit
 
-AnalogKit is a framework for SpriteKit projects that provides a fixed Analogic with user defined tracking area.
+AnalogKit is a framework for SpriteKit projects that provides a fixed Analog and hidden Analog with user defined tracking area.
 
 - Customizable Textures
 - Customizable Tracking Area
